@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ASCII Doge Animation</title>
+  </head>
+  <body>
+    <pre id="doge"></pre>
+    <script>
+      var frames = [
+        "  /\\_/\\    ",
+        " ( o.o )   ",
+        " > ^ <  ",
+      ];
+      var currentFrame = 0;
+      var doge = document.getElementById("doge");
+
+      function updateDoge() {
+        doge.innerHTML = frames[currentFrame];
+        currentFrame = (currentFrame + 1) % frames.length;
+      }
+      setInterval(updateDoge, 200);
+    </script>
+  </body>
+</html>
