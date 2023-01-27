@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ASCII Doge Animation</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #3f0080, #000000);
+      }
+      .logo {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+      }
+      .subtitle {
+        color: blue;
+        text-align: center;
+        margin: 10px 0;
+        animation: text-animation 2s ease-in0out infinite;
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+        animation: text-animation 2s ease-in-out infinite;
+      }
+      h3 {
+        color: blue;
+        text-align: center;
+        animation: text-animation 2s ease-in-out infinite;
+      }
+      h2 {
+        color: blue;
+        text-align: center;
+        animation: text-animation 2s ease-in-out infinite;
+      }
+      h4 {
+        color: blue;
+        text-align: center;
+        animation: text-animation 2s ease-in-out infinite;
+      }
+      @keyframes text-animation {
+        0% {
+          transform: translateY(-20px);
+        }
+        50% {
+          transform: translateY(20px);
+        }
+        100% {
+          transform: translateY(-20px);
+        }
+      }
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.5;
+      }
+    </style>
   </head>
   <body>
-    <pre id="doge"></pre>
-    <script>
-      var frames = [
-        "  /\\_/\\    ",
-        " ( o.o )   ",
-        " > ^ <  ",
-      ];
-      var currentFrame = 0;
-      var doge = document.getElementById("doge");
-
-      function updateDoge() {
-        doge.innerHTML = frames[currentFrame];
-        currentFrame = (currentFrame + 1) % frames.length;
-      }
-      setInterval(updateDoge, 200);
-    </script>
+    <video src="https://cdn.dribbble.com/users/1475355/screenshots/15441281/media/97195679e9fe27fb2f1d545fc0f072dc.mp4" autoplay loop muted></video>
+    <img src="https://cdn.discordapp.com/attachments/1008571049039896576/1068529063930626128/image.png" alt="Logo" class="logo">
+    <h1>Welcome to Ilja gradient webpage! If you are the one that launched Kennel,He said you are a cocksucking faggot</h1>
+    <h3 class="subtitle">Yeah You Suck Cock for a living</h3>
+    <h2 class="subtitle">If there was a World Cup for Cock Suckers you will be the "World Best Faggot"</h2>
+    <h1 class="subtitle">Glob ! Glob!! Slurp! Slurp!!!, you hear that ?? That is you, sucking cock "</h1>
   </body>
 </html>
